@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/yeti/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-bWm7zrSUE5E+21rA9qdH5frkMpXvqjQm/WJw4L5PYQLNHrywI5zs5saEjIcCdGu1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/8730d90b70.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Bookmark List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text text-center">
+        <i class="fas fa-book-open text-primary"></i>My<span
+          class="text text-primary"
+          >Book</span
+        >List
+      </h1>
+      <form id="myForm">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            autocomplete="off"
+            placeholder="Enter Book ..."
+          />
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input
+            type="text"
+            class="form-control"
+            id="author"
+            autocomplete="off"
+            placeholder="Enter Name ..."
+          />
+        </div>
+        <div class="form-group">
+          <label for="isbn">ISBN#</label>
+          <input
+            type="text"
+            class="form-control"
+            id="isbn"
+            autocomplete="off"
+            placeholder="Enter isbn ..."
+          />
+        </div>
+        <input
+          type="submit"
+          class="btn btn-primary btn-block"
+          value="Add Book"
+        />
+      </form>
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN#</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
